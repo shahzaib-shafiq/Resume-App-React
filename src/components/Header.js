@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { nav } from '../data';
 
 // import logo
-import Logo from '../assets/img/logo.svg';
+import Logo from '../assets/img/ss.png';
+import Logo1 from '../assets/img/s1.png';
+import Logo2 from '../assets/img/s2.png';
 
 // import react scroll link
 import { Link } from 'react-scroll';
@@ -24,15 +26,14 @@ const Header = () => {
   });
 
   return (
-    <header
-      className={`${
-        bg ? 'bg-white shadow-lg py-5' : 'py-9'
-      }  fixed left-0 right-0 z-50 transition-all duration-300`}
-    >
+    <header>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
           <Link to='home' className='cursor-pointer'>
-            <img src={Logo} alt='' />
+            <img className='object-contain h-120 w-440' src={Logo} alt='' />
+            <img  src={Logo2} alt='' />
+            <img  src={Logo1} alt='' />
+            
           </Link>
           <ul
             className={`${
